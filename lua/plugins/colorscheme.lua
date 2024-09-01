@@ -1,8 +1,11 @@
-return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+if true then
+  return {}
+end
 
-  -- Configure LazyVim to load gruvbox
+return {
+  { "ellisonleao/gruvbox.nvim" },
+  { "Mofiqul/vscode.nvim" },
+
   {
     "LazyVim/LazyVim",
     opts = {
