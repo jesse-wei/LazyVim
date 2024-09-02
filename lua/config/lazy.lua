@@ -51,3 +51,10 @@ require("lazy").setup({
     },
   },
 })
+
+-- This needs to be here or :ConfigureGtest won't work
+require("neotest").setup({
+  adapters = {
+    require("neotest-gtest").setup({}),
+  },
+})
